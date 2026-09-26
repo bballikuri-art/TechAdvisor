@@ -1,1 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>TechAdvisor</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            TechAdvisor
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="assistant.html">Assistant</a>
+            <a href="cart.html">Cart 🛒</a>
+        </nav>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h1>Find the right technology for you.</h1>
+
+            <p>
+                Discover computers, components and technology
+                products with the help of TechAdvisor.
+            </p>
+
+            <a href="products.html" class="button">
+                Explore Products
+            </a>
+
+            <a href="assistant.html" class="button secondary">
+                Ask the Assistant 🤖
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- SEARCH -->
+    <section class="search-section">
+
+        <h2>What are you looking for?</h2>
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search products..."
+        >
+
+        <button onclick="searchProducts()">
+            Search
+        </button>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+    <section class="categories">
+
+        <h2>Shop by Category</h2>
+
+        <div class="category-container">
+
+            <div class="category">
+                💻
+                <h3>Computers</h3>
+                <p>Laptops and PCs</p>
+            </div>
+
+            <div class="category">
+                ⚙️
+                <h3>Components</h3>
+                <p>CPU, GPU, RAM and more</p>
+            </div>
+
+            <div class="category">
+                🖱️
+                <h3>Peripherals</h3>
+                <p>Keyboard, mouse and monitors</p>
+            </div>
+
+            <div class="category">
+                📡
+                <h3>Networking</h3>
+                <p>Routers and switches</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURED PRODUCTS -->
+    <section class="products">
+
+        <h2>Featured Products</h2>
+
+        <div class="product-container">
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    💻
+                </div>
+
+                <h3>Gaming Laptop</h3>
+
+                <p>16GB RAM • 512GB SSD</p>
+
+                <strong>€799</strong>
+
+                <button onclick="addToCart('Gaming Laptop')">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    🖥️
+                </div>
+
+                <h3>Gaming PC</h3>
+
+                <p>16GB RAM • RTX Graphics</p>
+
+                <strong>€999</strong>
+
+                <button onclick="addToCart('Gaming PC')">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    📡
+                </div>
+
+                <h3>Wi-Fi Router</h3>
+
+                <p>High-speed Wi-Fi</p>
+
+                <strong>€89</strong>
+
+                <button onclick="addToCart('Wi-Fi Router')">
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ASSISTANT -->
+    <section class="assistant">
+
+        <h2>🤖 Need help choosing?</h2>
+
+        <p>
+            Tell TechAdvisor what you need and your budget.
+            We can help you find suitable products.
+        </p>
+
+        <a href="assistant.html" class="button">
+            Try the Assistant
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h3>TechAdvisor</h3>
+
+        <p>
+            Your technology shopping assistant.
+        </p>
+
+        <p>
+            SMX2 Project
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
